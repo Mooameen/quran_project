@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">إسلامي</string>
+    <string name="title_home">قرآن</string>
+    <string name="title_dashboard">تسبيح</string>
+    <string name="title_notifications">احاديث</string>
+    <string name="title_quran">قرآن</string>
+
+    <string name="tasbeh">تسبيح</string>
+    <string name="tasbehat">عدد التسبيحات</string>
+    <string name="tasbeha">تسبيحة</string>
+    <string name="title_ahadith">احاديث</string>
+    <string-array name="sebha_arr">
+        <item>سبحان الله</item>
+        <item>الحمدلله</item>
+        <item>الله اكبر</item>
+    </string-array>
+
+    <string name="ahadith">احاديث</string>
+    <string name="history">history</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

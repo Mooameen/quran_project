@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mainbackground"
+    android:padding="10dp"
+    tools:context=".TasbehFragment">
+
+
+
+    <ImageView
+        android:id="@+id/sebha"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_action_tasbeh"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/repeat_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_action_repeat"
+        app:layout_constraintTop_toBottomOf="@id/sebha"
+        app:layout_constraintBottom_toTopOf="@id/tasbeha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/tasbehat"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tasbehat_count"
+        />
+
+    <TextView
+        android:id="@+id/tasbehat_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tasbehat_background"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="123"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/tasbeha"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tasbeha"
+        />
+
+    <TextView
+        android:id="@+id/tasbeha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tasbehat_background"
+        android:padding="10dp"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="46"
+        />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/sebha_arr"
+        android:background="@drawable/tasbehat_background"
+        android:padding="20dp"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tasbehat_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
